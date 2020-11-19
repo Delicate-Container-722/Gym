@@ -10,7 +10,11 @@
     <AssemblyName>Gym</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Empty</MyType>
+<<<<<<< HEAD
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+=======
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+>>>>>>> Dev
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -63,6 +67,7 @@
     <None Include="App.config" />
     <None Include="My Project\app.manifest" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
   <ItemGroup>
     <Compile Include="field\booking.Designer.vb">
@@ -73,12 +78,44 @@
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
     <Compile Include="login\login.vb" />
+=======
+  <ItemGroup>
+    <EmbeddedResource Include="field\student-UI.resx">
+      <DependentUpon>student-UI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\startup.resx">
+      <DependentUpon>startup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="field\student-UI.Designer.vb">
+      <DependentUpon>student-UI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="field\student-UI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> Dev
     <Compile Include="login\startup.Designer.vb">
       <DependentUpon>startup.vb</DependentUpon>
     </Compile>
     <Compile Include="login\startup.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="My Project\Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
@@ -88,6 +125,21 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+=======
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+>>>>>>> Dev
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
